@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username:
+  password:
+  prepared_statements: false
+
+development:
+  <<: *default
+  database: school_again_development
+
+test:
+  <<: *default
+  database: school_again_test
+
+staging:
+  <<: *default
+  database: school_again_staging
+
+production:
+  <<: *default
+  database: school_again_production
+

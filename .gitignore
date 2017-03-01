@@ -11,7 +11,6 @@
 /log/*.log
 /tmp
 /db/schema.rb
-/config/database.yml
 /public/images/*
 /public/assets/*
 /config/locales/whats_new.en.txt

@@ -938,6 +938,7 @@ Fedena::Application.routes.draw do
         get :change_password
         post :change_password
         get :first_login_change_password
+        post :first_login_change_password
       end
     end
 
