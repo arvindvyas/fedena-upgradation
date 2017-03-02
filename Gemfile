@@ -45,7 +45,6 @@ gem 'wicked_pdf'
 gem 'declarative_authorization'
 gem 'ruby_parser'
 gem "iconv", "~> 1.0.3"
-gem 'test-unit', '1.2.3'
 gem 'delayed_job'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'thin'
