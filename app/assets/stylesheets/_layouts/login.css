@@ -10,9 +10,10 @@ body {
 }
 
 #top_logo {
-    margin:0 auto;
-    padding-top:15px;
-    height:115px; width:155px;
+    height: 132px;
+    margin: 0 auto;
+    padding-top: 0;
+    width: 406px;
     /*background:#fff url(/assets/login/fedena_logo.jpg) no-repeat;*/
 }
 #top_logo h1 {
