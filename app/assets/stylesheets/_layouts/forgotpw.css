@@ -10,8 +10,10 @@ body {
 }
 
 #top_logo {
-    margin:0 auto;
-    height:143px; width:156px;
+    height: 132px;
+    margin: 0 auto;
+    padding-top: 0;
+    width: 406px;
 }
 #top_logo h1 {
     text-indent:-9999px;
