@@ -130,7 +130,7 @@ class ApplicationController < ActionController::Base
   end
 
   def initialize
-    @title = 'School Management'
+    @title = FedenaSetting.company_details[:company_name]
   end
 
   def message_user

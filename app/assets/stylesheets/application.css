@@ -1069,3 +1069,7 @@ textarea{
   background-color: windowtext;
   opacity: 0.77;
 }
+#institution-name img{
+  padding-top: 0;
+  width: 100px;
+}
