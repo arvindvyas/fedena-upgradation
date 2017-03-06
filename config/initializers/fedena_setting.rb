@@ -1,6 +1,6 @@
 FEDENA_DEFAULTS = {
-  :company_name => 'Fedena',
-  :company_url  => 'http://www.projectfedena.org'
+  :company_name => 'Campus Management System',
+  :company_url  => 'http://www.arvindvyas.com'
 }
 
 USER_SETTINGS = {}
