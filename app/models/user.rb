@@ -65,7 +65,7 @@ class User < ActiveRecord::Base
   scope :inactive, -> { where(is_deleted: true) }
 
   after_find do |u|
-    u.salt = 'fedena'
+    u.salt = 'campus'
     u.role = u.role_name
   end
 

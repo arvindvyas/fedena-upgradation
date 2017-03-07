@@ -111,7 +111,10 @@ class UsersController < ApplicationController
 
     @user = User.new(user_params)
     if request.post?
+     @user.salt = 'campus'
      @user.role = "Admin"
+     @user.hashed_password = Digest::SHA1.hexdigest(@user.salt + @user.password)
+         
       if @user.save
         flash[:notice] = "#{t('user.flash17')}"
         redirect_to :controller => 'users', :action => 'edit', :id => @user.username

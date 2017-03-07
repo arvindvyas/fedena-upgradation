@@ -40,7 +40,8 @@ class Observation < ActiveRecord::Base
 
 
   accepts_nested_attributes_for :descriptive_indicators
-
+ # has_one :dob, ->(dob) { where("Date.new(2000, 01, 01) > ?", dob) }
+  has_one :next_record, ->(obj) { observations.where('order > ?', obj.order) }
   default_scope { order('sort_order ASC')}
   scope :active, -> { where(is_active: true)}
 
