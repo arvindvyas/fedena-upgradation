@@ -1292,7 +1292,7 @@ en: # locale
   user_information: "User Information"
   privilege: "privilege"
   to_dashboard: "to Fedena dashboard"
-  admission_link_title: "Enter students admission details into the school records."
+  admission_link_title: "Enter students admission details into the college records."
   student_link_title: "Search for existing and former students."
   user_link_title: "         Manage Users         "
   news_link_title: "View or publish latest school news and announcements"
