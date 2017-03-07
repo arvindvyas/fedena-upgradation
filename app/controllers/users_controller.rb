@@ -84,14 +84,14 @@ class UsersController < ApplicationController
 
   def user_change_password
     @user = User.active.find_by_username(params[:id])
-
     if request.post?
       if params[:user][:new_password]=='' and params[:user][:confirm_password]==''
         flash[:warn_notice]= "<p>#{t('user.flash6')}</p>"
       else
         if params[:user][:new_password] == params[:user][:confirm_password]
           @user.password = params[:user][:new_password]
-          if @user.update_attributes(:password => @user.password,:role => @user.role_name)
+   
+          if @user.update_attributes(:password => @user.password,:role => @user.role_name, hashed_password: Digest::SHA1.hexdigest(@user.salt + @user.password))
             flash[:notice]= "#{t('user.flash7')}"
             redirect_to :action => "profile", :id=>@user.username
           else
